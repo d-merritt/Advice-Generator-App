@@ -5,7 +5,6 @@
 }
 
 body {
-  background-color: #202733;
   font-family: "Manrope", sans-serif;
   font-size: 16px;
   padding: 1.25rem;
@@ -17,8 +16,19 @@ body {
   height: calc(100vh - 0.1px);
 }
 
+.imagedetails {
+  margin-top: 2.5rem;
+}
+
+#imageLink {
+  position: absolute;
+  z-index: -2;
+
+}
+
+
 .advice-card {
-  background-color: #313a48;
+  background-color: rgba(49, 58, 72, 0.7);
   padding: 1.25rem 1.25rem 3.5rem;
   border-radius: 5px;
   position: relative;

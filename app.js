@@ -16,17 +16,17 @@ const getAdvice = async () => {
   fetch(endpoint)
     .then((response) => response.json())
     .then((jsonData) => {
-      imageElement.src = jsonData.urls.regular;
+      imageElement.src = jsonData.urls.raw;
       imageLink.setAttribute("href", jsonData.links.html);
 
       creator.innerText = jsonData.user.name;
       creator.setAttribute("href", jsonData.user.portfolio_url);
-
     })
     .catch((error) => {
       console.log("Error: " + error);
     });
 
 };
+
 
 getAdvice();
